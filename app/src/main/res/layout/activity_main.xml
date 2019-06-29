@@ -12,9 +12,10 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:background="#0C89F7"
         android:onClick="onAddItem"
         android:text="add item"
-        android:textColor="#2FC035"
+        android:textColor="#141B14"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -22,14 +23,16 @@
         android:id="@+id/etNewItem"
         android:layout_width="290dp"
         android:layout_height="44dp"
+        android:layout_marginStart="18dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="12dp"
         android:ems="10"
         android:hint="enter a new item here"
-        android:textColorHint="@color/colorPrimary"
         android:inputType="textPersonName"
+        android:textColorHint="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/BtnItem" />
+        app:layout_constraintEnd_toStartOf="@+id/BtnItem"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ListView
         android:id="@+id/LvItems"
